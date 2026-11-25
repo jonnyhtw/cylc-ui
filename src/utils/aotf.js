@@ -204,6 +204,7 @@ export const primaryMutations = {
     'release',
     'trigger',
     'kill',
+    'poll',
     'set',
     'log',
     'info',
