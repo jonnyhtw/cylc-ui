@@ -48,6 +48,7 @@ const GuideView = defineAsyncComponent(() => import('@/views/Guide.vue'))
  */
 
 export const TREE = 'Tree'
+export const GRAPH = 'Graph'
 
 /**
  * A map of the views that can be opened for a workflow.
@@ -123,10 +124,10 @@ export const allViews = new Map([
 ])
 
 export const useDefaultView = () => {
-  const defaultView = useLocalStorage('defaultView', TREE)
+  const defaultView = useLocalStorage('defaultView', GRAPH)
   // Check if the view is implemented (in case we remove/rename a view in future)
   if (!allViews.has(defaultView.value)) {
-    defaultView.value = TREE
+    defaultView.value = GRAPH
   }
   return defaultView
 }
