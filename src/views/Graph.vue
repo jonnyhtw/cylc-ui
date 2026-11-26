@@ -268,7 +268,7 @@ export default {
      * If true the graph nodes will be grouped by cycle point
      * @type {import('vue').Ref<boolean>}
      */
-    const groupCycle = useInitialOptions('groupCycle', { props, emit }, false)
+    const groupCycle = useInitialOptions('groupCycle', { props, emit }, true)
 
     const { workflowIDs, variables } = useGraphQL()
 
