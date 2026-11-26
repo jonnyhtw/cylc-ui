@@ -27,7 +27,7 @@ import { useLocalStorage } from '@vueuse/core'
 
 export const useCyclePointsOrderDesc = () => useLocalStorage('cyclePointsOrderDesc', true)
 
-export const useJobTheme = () => useLocalStorage('jobTheme', 'default')
+export const useJobTheme = () => useLocalStorage('jobTheme', 'colour_blind')
 
 export const useReducedAnimation = () => useLocalStorage('reducedAnimation', false)
 
